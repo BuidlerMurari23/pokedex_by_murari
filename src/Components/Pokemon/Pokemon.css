@@ -1,0 +1,23 @@
+.pokemon-wrapper-element{
+    width: 20%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pokemon-name{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.pokemon-image{
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
+}
+.pokemon-wrapper-element:hover{
+    background-color: #e1effb;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
