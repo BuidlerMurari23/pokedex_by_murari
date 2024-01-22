@@ -83,7 +83,15 @@ function PokemonList({search}){
                 }
             }
         }
-        searchPokemon()
+        const searchDebounce = setTimeout(() => {
+            searchPokemon()
+        },2000);
+        
+        return () => clearTimeout(searchDebounce)
+        // here when ever search or pokemonList get updated then
+        // first it goes to return and clear the timeout first and 
+        // then moves to the components for the api call.......
+
     },[search, pokemonList])
 
     return (
